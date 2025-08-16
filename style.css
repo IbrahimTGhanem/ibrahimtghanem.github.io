@@ -1,0 +1,47 @@
+/* Minimal clean layout inspired by academic profile pages */
+:root{
+  --text:#111;
+  --muted:#4660c6; /* link blue */
+  --subtle:#666;
+  --border:#e6e6e6;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  color:var(--text);
+  background:#fff;
+  line-height:1.65;
+}
+.wrap{max-width:1100px;margin:40px auto;padding:0 20px}
+.site-header .name{font-weight:500;letter-spacing:.2px;margin:0 0 24px}
+.site-header .name a{text-decoration:none;color:var(--muted)}
+.grid{
+  display:grid;
+  grid-template-columns:280px 1fr;
+  gap:48px;
+  align-items:start;
+}
+.photo img{width:100%;height:auto;border-radius:6px;display:block;box-shadow:0 2px 12px rgba(0,0,0,.06)}
+.left .links{margin-top:12px;display:flex;flex-direction:column;gap:8px}
+.left .links a{color:var(--muted);text-decoration:none}
+.left .links a:hover{text-decoration:underline}
+.right p{margin-top:0}
+h2{color:var(--muted);font-weight:500;margin-top:28px;margin-bottom:12px}
+.updates{list-style:none;padding:0;margin:0}
+.updates li{padding:10px 0;border-bottom:1px solid var(--border)}
+.updates time{color:var(--muted);margin-right:8px;white-space:nowrap}
+
+.timeline{display:flex;gap:40px;flex-wrap:wrap;margin-top:24px}
+.org{display:flex;align-items:center;gap:12px}
+.org img{width:110px;height:auto;filter:grayscale(20%)}
+.org-name{font-weight:500}
+.org-years{font-size:.9rem;color:var(--subtle)}
+
+.site-footer{margin:36px 0 12px;color:var(--subtle);font-size:.95rem;border-top:1px solid var(--border);padding-top:12px}
+
+@media (max-width:900px){
+  .grid{grid-template-columns:1fr}
+  .left{order:1}
+  .right{order:2}
+}

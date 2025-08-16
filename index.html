@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ibrahim T. Ghanem</title>
+  <meta name="description" content="Ibrahim T. Ghanem — quantitative geographer.">
+  <link rel="icon" href="data:,">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="site-header">
+      <h1 class="name"><a href="./">Ibrahim T. Ghanem</a></h1>
+    </header>
+
+    <main class="grid">
+      <!-- Left column -->
+      <aside class="left">
+        <figure class="photo">
+          <img src="assets/profile.jpg" alt="Ibrahim T. Ghanem portrait">
+        </figure>
+
+        <nav class="links">
+          <a href="https://scholar.google.com/" target="_blank" rel="noopener">publications</a>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noopener">linkedin</a>
+          <a href="mailto:you@email.com">email</a>
+          <a href="calendar.html">calendar</a>
+        </nav>
+      </aside>
+
+      <!-- Right column -->
+      <section class="right">
+        <p>
+          I am a PhD student in quantitative geography at the University of Toronto Mississauga.
+          I study walkability, mobility, and health outcomes across neighbourhoods.
+          I use GIS, spatial statistics, and mixed methods to measure access, behaviour, and equity.
+        </p>
+
+        <p>
+          I collaborate with community partners to map perceived walkability and collect survey data.
+          I focus on Arab communities in the Toronto CMA and on underserved areas citywide.
+          I aim to produce open, reproducible analysis and tools.
+        </p>
+
+        <p>
+          Outside research, I enjoy cycling and building small web tools for mapping.
+          See my projects and code on GitHub.
+        </p>
+
+        <h2>Recent updates</h2>
+        <ul class="updates">
+          <li><time datetime="2025-08-01">Aug 1, 2025</time> Presented bike‑share accessibility work.</li>
+          <li><time datetime="2025-06-15">Jun 15, 2025</time> Launched participatory mapping phase.</li>
+          <li><time datetime="2025-03-01">Mar 1, 2025</time> Began PhD at UTM Geography.</li>
+        </ul>
+
+        <section class="timeline">
+          <div class="org">
+            <img src="assets/logo_ut.png" alt="UofT logo">
+            <div class="org-meta">
+              <div class="org-name">University of Toronto</div>
+              <div class="org-years">Present</div>
+            </div>
+          </div>
+          <div class="org">
+            <img src="assets/logo_prev1.png" alt="Previous 1">
+            <div class="org-meta">
+              <div class="org-name">York Region</div>
+              <div class="org-years">2022–2024</div>
+            </div>
+          </div>
+          <div class="org">
+            <img src="assets/logo_prev2.png" alt="Previous 2">
+            <div class="org-meta">
+              <div class="org-name">Previous Affiliation</div>
+              <div class="org-years">2018–2022</div>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Ibrahim T. Ghanem</p>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
