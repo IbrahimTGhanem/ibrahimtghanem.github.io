@@ -45,3 +45,16 @@ h2{color:var(--muted);font-weight:500;margin-top:28px;margin-bottom:12px}
   .left{order:1}
   .right{order:2}
 }
+/* Keep affiliation logos undistorted */
+.timeline .org-logos img{
+  width:auto !important;      /* override the 110px width */
+  height:auto;                /* keep aspect ratio */
+  max-height:80px;            /* control size without stretching */
+  object-fit:contain;
+  filter:none;                /* keep original colours */
+}
+.timeline .org-logos > div{
+  text-align:center;
+  flex:1 1 220px;
+  margin-bottom:30px;
+}
