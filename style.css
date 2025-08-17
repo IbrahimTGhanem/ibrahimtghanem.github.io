@@ -24,7 +24,7 @@ body{
 }
 .photo img{
   width:100%;
-  max-width:260px;  /* adjust this number to make image bigger (default was ~200px) */
+  max-width:270px;  /* adjust this number to make image bigger (default was ~200px) */
   height:auto;
   border-radius:6px;
   display:block;
