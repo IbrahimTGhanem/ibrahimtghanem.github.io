@@ -18,11 +18,18 @@ body{
 .site-header .name a{text-decoration:none;color:var(--muted)}
 .grid{
   display:grid;
-  grid-template-columns:350px 1fr;
+  grid-template-columns:280px 1fr;
   gap:48px;
   align-items:start;
 }
-.photo img{width:100%;height:auto;border-radius:6px;display:block;box-shadow:0 2px 12px rgba(0,0,0,.06)}
+.photo img{
+  width:100%;
+  max-width:280px;  /* adjust this number to make image bigger (default was ~200px) */
+  height:auto;
+  border-radius:6px;
+  display:block;
+  box-shadow:0 2px 12px rgba(0,0,0,.06);
+}
 .left .links{margin-top:12px;display:flex;flex-direction:column;gap:8px}
 .left .links a{color:var(--muted);text-decoration:none}
 .left .links a:hover{text-decoration:underline}
