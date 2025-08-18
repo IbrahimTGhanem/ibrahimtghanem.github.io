@@ -76,10 +76,11 @@ h2{color:var(--muted);font-weight:500;margin-top:28px;margin-bottom:12px}
   margin-top: 28px;
   margin-bottom: 12px;
   font-size: 1.2rem;
+  padding-left: 18px;
 }
 
 .education ul {
   list-style: disc;
-  padding-left: 15px;  /* aligns bullets under the heading */
+  padding-left: 20px;  /* aligns bullets under the heading */
   margin: 0;
 }
