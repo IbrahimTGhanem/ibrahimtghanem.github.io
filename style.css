@@ -69,3 +69,17 @@ h2{color:var(--muted);font-weight:500;margin-top:28px;margin-bottom:12px}
 .icon-links a{display:inline-flex}
 .icon-links img{height:30px;width:auto;display:block}
 .left .icon-links{justify-content:center}
+
+.education h2 {
+  color: var(--muted);
+  font-weight: 500;
+  margin-top: 28px;
+  margin-bottom: 12px;
+  font-size: 1.2rem;
+}
+
+.education ul {
+  list-style: disc;
+  padding-left: 20px;  /* aligns bullets under the heading */
+  margin: 0;
+}
