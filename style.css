@@ -84,3 +84,8 @@ h2{color:var(--muted);font-weight:500;margin-top:28px;margin-bottom:12px}
   padding-left: 22px;  /* aligns bullets under the heading */
   margin: 0;
 }
+
+.right p {
+  margin-top: 6px;   /* smaller gap above */
+  margin-bottom: 6px; /* smaller gap below */
+}
