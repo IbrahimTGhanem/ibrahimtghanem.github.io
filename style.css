@@ -86,6 +86,6 @@ h2{color:var(--muted);font-weight:500;margin-top:28px;margin-bottom:12px}
 }
 
 .right p {
-  margin-top: 3px;   /* smaller gap above */
-  margin-bottom: 3px; /* smaller gap below */
+  margin-top: 4px;   /* smaller gap above */
+  margin-bottom: 4px; /* smaller gap below */
 }
