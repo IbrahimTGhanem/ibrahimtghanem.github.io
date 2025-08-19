@@ -108,11 +108,12 @@ h2{color:var(--muted);font-weight:500;margin-top:28px;margin-bottom:12px}
 }
 
 .gallery-item img {
-  width: 100%;
-  height: 120px;
-  object-fit: cover;
-  border-radius: 6px;
-  display: block;
+  width: 150px;        /* fixed width */
+  height: 100px;       /* fixed height */
+  object-fit: cover;   /* crop to fill space without distortion */
+  cursor: pointer;
+  border-radius: 4px;
+  transition: transform 0.2s;
 }
 
 .caption {
