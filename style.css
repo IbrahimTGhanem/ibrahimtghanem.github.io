@@ -107,14 +107,16 @@ h2{color:var(--muted);font-weight:500;margin-top:28px;margin-bottom:12px}
   gap: 14px;
 }
 
-.gallery-item img {
-  width: 150px;        /* fixed width */
-  height: 100px;       /* fixed height */
-  object-fit: cover;   /* crop to fill space without distortion */
-  cursor: pointer;
-  border-radius: 4px;
-  transition: transform 0.2s;
+.gallery-item img{
+  width:150px !important;     /* force same width */
+  height:100px !important;    /* force same height */
+  object-fit:cover;           /* crop without distortion */
+  display:block;
+  border-radius:4px;
+  transition:transform .2s;
+  margin:0 auto;              /* center */
 }
+
 
 .caption {
   text-align: center;
