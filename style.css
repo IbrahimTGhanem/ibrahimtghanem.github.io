@@ -89,3 +89,8 @@ h2{color:var(--muted);font-weight:500;margin-top:28px;margin-bottom:12px}
   margin-top: 4px;   /* smaller gap above */
   margin-bottom: 4px; /* smaller gap below */
 }
+.left {
+  background-color: #fafafa;   /* subtle light gray */
+  padding: 20px;              /* add space inside */
+  border-radius: 6px;          /* optional: rounded corners */
+}
