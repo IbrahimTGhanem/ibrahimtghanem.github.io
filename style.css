@@ -127,7 +127,7 @@ h2{color:var(--muted);font-weight:500;margin-top:28px;margin-bottom:12px}
 .site-header h1 {
   font-size: 2rem;
   font-weight: 700;
-  margin-bottom: 0.2em;   /* reduce this value */
+  margin-bottom: 0.1em;   /* reduce this value */
   color: #2a52be;
 }
 
