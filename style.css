@@ -138,3 +138,23 @@ h2{color:var(--muted);font-weight:500;margin-top:28px;margin-bottom:12px}
   margin-bottom: 0;     /* no gap below */
   color: #444;
 }
+
+.projects h2 {
+  color: var(--muted);
+  font-weight: 500;
+  margin-top: 28px;
+  margin-bottom: 12px;
+  font-size: 1.2rem;
+  padding-left: 22px;
+}
+
+.projects ul {
+  list-style: disc;
+  padding-left: 22px;
+  margin: 0;
+}
+
+.projects li {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
