@@ -29,6 +29,9 @@ body{
   border-radius:6px;
   display:block;
   box-shadow:0 2px 12px rgba(0,0,0,.06);
+  cursor: pointer; /* changes mouse to hand pointer */
+  opacity: 0.9;
+  transition: opacity 0.2s ease;
 }
 .left .links{margin-top:12px;display:flex;flex-direction:column;gap:8px}
 .left .links a{color:var(--muted);text-decoration:none}
