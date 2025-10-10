@@ -23,7 +23,7 @@
       <!-- Left column -->
       <aside class="left">
         <figure class="photo">
-          <img src="Profile.jpg" alt="Ibrahim Ghanem picture">
+           <img id="profile-pic" src="Profile.jpg" alt="Ibrahim Ghanem picture" onclick="toggleImage()">
         </figure>
 
         <div class="icon-links">
@@ -156,8 +156,20 @@ of University of Toronto Mississauga (UTM) (2022-Present).
     </footer>
   </div>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+<script>
+  const profilePic = document.getElementById("profile-pic");
+  let showingProfile = true;
+
+  function toggleImage() {
+    if (showingProfile) {
+      profilePic.src = "Ghanem.jpg";
+    } else {
+      profilePic.src = "Profile.jpg";
+    }
+    showingProfile = !showingProfile;
+  }
+
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
