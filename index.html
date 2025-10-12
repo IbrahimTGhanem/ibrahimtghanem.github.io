@@ -162,18 +162,20 @@ of University of Toronto Mississauga (UTM) (2022-Present).
 
 <script>
   const profilePic = document.getElementById("profile-pic");
-  let showingProfile = true;
+  let revertTimer = null;
 
   function toggleImage() {
-    if (showingProfile) {
-      profilePic.src = "Ghanem.JPG";
-    } else {
-      profilePic.src = "Profile.jpg";
-    }
-    showingProfile = !showingProfile;
-  }
+    // Switch to alternate image
+    profilePic.src = "Ghanem.JPG";
 
-  document.getElementById('year').textContent = new Date().getFullYear();
+    // Clear any existing timer (if clicked repeatedly)
+    if (revertTimer) clearTimeout(revertTimer);
+
+    // Automatically revert after 4 seconds
+    revertTimer = setTimeout(() => {
+      profilePic.src = "Profile.jpg";
+    }, 5000);
+  }
 </script>
 </body>
 </html>
