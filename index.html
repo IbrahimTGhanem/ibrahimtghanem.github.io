@@ -23,7 +23,7 @@
       <!-- Left column -->
       <aside class="left">
         <figure class="photo">
-           <img id="profile-pic" src="Profile.jpg" alt="Ibrahim Ghanem picture" onclick="toggleImage()">
+        <img src="Profile.jpg" alt="Ibrahim Ghanem picture">        
         </figure>
 
         <div class="icon-links">
@@ -161,23 +161,6 @@ of University of Toronto Mississauga (UTM) (2022-Present).
       <p>© <span id="year"></span> Ibrahim Ghanem</p>
     </footer>
   </div>
-
-<script>
-  const profilePic = document.getElementById("profile-pic");
-  let revertTimer = null;
-
-  function toggleImage() {
-    // Switch to alternate image
-    profilePic.src = "Ghanem.JPG";
-
-    // Clear any existing timer (if clicked repeatedly)
-    if (revertTimer) clearTimeout(revertTimer);
-
-    // Automatically revert after 4 seconds
-    revertTimer = setTimeout(() => {
-      profilePic.src = "Profile.jpg";
-    }, 5000);
-  }
-</script>
+  
 </body>
 </html>
